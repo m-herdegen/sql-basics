@@ -20,6 +20,7 @@
    SELECT \* FROM students WHERE first_name LIKE '%T%' OR first_name LIKE '%t%' OR last_name LIKE '%T%' OR last_name LIKE '%t%' AND birthdate < '1986-01-01';
 
 8. The average age of all the students.
+   SELECT AVG(AGE(birthdate)) from students;
 
 9. Addresses that have a space in their city name.
    SELECT \* FROM addresses WHERE city LIKE '% %';
